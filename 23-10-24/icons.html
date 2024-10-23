@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steps Icons</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #E5C3B5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .steps-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .step {
+            text-align: center;
+            margin: 0 20px;
+        }
+
+        .circle {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            color: #fff;
+            background-color: #E1B8A2;
+            border: 2px solid #E1B8A2;
+        }
+
+        .step.active .circle {
+            background-color: #D29882;
+            color: #fff;
+            border: none;
+        }
+
+        .label {
+            margin-top: 10px;
+            color: #4F3E3E;
+        }
+
+        .line {
+            height: 2px;
+            width: 50px;
+            background-color: #C8A190;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="steps-container">
+        <div class="step active">
+            <div class="circle">1</div>
+            <div class="label">Register</div>
+        </div>
+        <div class="line"></div>
+        <div class="step">
+            <div class="circle">2</div>
+            <div class="label">Pay</div>
+        </div>
+        <div class="line"></div>
+        <div class="step">
+            <div class="circle">3</div>
+            <div class="label">Complete</div>
+        </div>
+    </div>
+</body>
+</html>
